@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.top-header {
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    padding: 1px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-text {
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: "Arial Bold", sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 70px;
+    margin-left: 76vh;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 20 350px;
+}
+
+img {
+    width: 350px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.imag,
+.slow,
+.slower {
+    animation: breathe 3s infinite alternate;
+}
+
+.imag {
+    animation-delay: -2s;
+    width: 400px;
+
+}
+
+.slow {
+    animation-delay: -3s;
+    width: 500px;
+
+}
+
+.slower {
+    animation-delay: -4s;
+    width: 400px;
+
+}
+
+@keyframes breathe {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+.image-with-gradient {
+    position: relative;
+    overflow: hidden;
+    height: 1050px;
+}
+
+.image-with-gradient::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+}
+
+.text-above-images {
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+    white-space: nowrap;
+}
+
+.flexbox-below-images {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.flexbox-below-images2 {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 100px;
+
+}
+.image-container {
+    display: flexbox;
+    justify-content: left;
+    width: 450px;
+    height: 450px;
+    background-image: url("/Panda Web/Images/panda puple logogo.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: 5px;
+}
+.image-container2 {
+    display: block;
+    width: 500px;
+    height: 250px;
+    background-image: url("/Panda Web/Images/2.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-bottom: 200px;
+
+}
+.image-container3 {
+    display: block;
+    width: 900px;
+    height: 250px;
+    background-image: url("/Panda Web/Images/1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-bottom: 200px;
+
+}
+
+
+.image-container4 {
+    display: block;
+    width: 900px;
+    height: 250px;
+    background-image: url("/Panda Web/Images/Frame.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-bottom: 200px;
+
+}
